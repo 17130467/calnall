@@ -23,6 +23,8 @@ import javax.swing.border.*;
 	private JLabel label_1;
 	public static double int_rad;
 	static int a=13,a1=13,a2=15,a3=30,a4=35;
+	Font font=new Font ("TimesRoman", Font.BOLD, 12); 
+	Border bor = new LineBorder(Color.green);
 	public Nalog() { 
 	setTitle("Меню");
 	setResizable(false);
@@ -105,6 +107,7 @@ sum_ok.setHorizontalAlignment(JTextField.CENTER);
 sum_ok.setMargin(new Insets(2, 5, 2, 5)); 
 ButtonGroup group = new ButtonGroup(); 
 rad_13 = new JRadioButton("Иное",false);
+rad_13.setOpaque(true);
 group.add(rad_13); 
 rad_13.setHorizontalAlignment(JRadioButton.LEFT); 
 rad_13_1 = new JRadioButton("Любой доход гражданина ЕАЭС",false); 
